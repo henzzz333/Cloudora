@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloudora</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Open Sans", sans-serif;
+      background: #ffffff;
+      color: #202124;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3 { font-family: "Poppins", sans-serif; font-weight: 700; }
+    a { text-decoration: none; color: inherit; }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 50px;
+      background: #ffffff;
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid #e0e0e0;
+      z-index: 999;
+    }
+
+    .logo { font-size: 26px; font-weight: 700; color: #4285F4; border-radius: 22px; }
+    .nav-links { display: flex; gap: 35px; font-family: "Poppins"; }
+
+    .hero {
+      text-align: center;
+      padding: 120px 20px;
+      max-width: 900px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: 1s ease;
+    }
+
+    .btn-secondary {
+      background: white;
+      border: 2px solid #dadce0;
+      padding: 16px 34px;
+      border-radius: 22px;
+      font-family: "Poppins";
+      font-weight: 600;
+      display: inline-block;
+    }
+
+    .section-title { text-align: center; font-size: 38px; margin-bottom: 25px; }
+
+    /* CARDS */
+    .tools-section, .features-section, .ecosystem-section, .extended-section {
+      padding: 100px 60px;
+    }
+
+    .tools-grid, .features-grid, .ecosystem-grid, .extended-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 40px;
+    }
+
+    .tool-card, .feature, .ecosystem-item, .extended-card {
+      background: white;
+      padding: 30px;
+      border-radius: 30px;
+      box-shadow: 0 8px 26px rgba(0,0,0,0.1);
+      transition: 0.4s;
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    .tool-card:hover, .feature:hover, .ecosystem-item:hover, .extended-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 34px rgba(0,0,0,0.15);
+    }
+
+    .tool-icon { font-size: 48px; margin-bottom: 18px; }
+
+    footer {
+      text-align: center;
+      padding: 60px;
+      color: #5f6368;
+      margin-top: 80px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">☁ Cloudora</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#tools">Tools</a>
+      <a href="#ecosystem">Ecosystem</a>
+      <a href="#more">More</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <h1>Work. Create. Explore.</h1>
+    <p>The all‑in‑one ecosystem for students, creators, developers, and dreamers.</p>
+    <a class="btn-secondary" href="#tools">Explore Cloudora Tools</a>
+  </section>
+
+  <section class="tools-section" id="tools">
+    <h2 class="section-title">Cloudora Tools</h2>
+    <div class="tools-grid">
+      <div class="tool-card"><div class="tool-icon">📝</div><h3>Cloudora Docs</h3><p>Create clean, organized documents.</p></div>
+      <div class="tool-card"><div class="tool-icon">📊</div><h3>Cloudora Slides</h3><p>Make modern presentations.</p></div>
+      <div class="tool-card"><div class="tool-icon">🎨</div><h3>Cloudora Canvas</h3><p>Design graphics and posters.</p></div>
+      <div class="tool-card"><div class="tool-icon">📁</div><h3>Cloudora Drive</h3><p>Secure cloud storage.</p></div>
+      <div class="tool-card"><div class="tool-icon">🧪</div><h3>Cloudora Labs</h3><p>Test experimental features.</p></div>
+      <div class="tool-card"><div class="tool-icon">💬</div><h3>Cloudora Chat</h3><p>Real‑time communication (soon).</p></div>
+    </div>
+  </section>
+
+  <section class="features-section">
+    <h2 class="section-title">Why Cloudora?</h2>
+    <div class="features-grid">
+      <div class="feature"><h3>Beginner‑Friendly</h3><p>Simple UI for anyone to use.</p></div>
+      <div class="feature"><h3>Fast & Smooth</h3><p>Designed for all devices.</p></div>
+      <div class="feature"><h3>Beautifully Organized</h3><p>Everything in one clean place.</p></div>
+      <div class="feature"><h3>Privacy First</h3><p>Your work stays yours.</p></div>
+    </div>
+  </section>
+
+  <section class="ecosystem-section" id="ecosystem">
+    <h2 class="section-title">Cloudora Ecosystem</h2>
+    <div class="ecosystem-grid">
+      <div class="ecosystem-item"><h3>Cloudora ID</h3><p>One account for everything.</p></div>
+      <div class="ecosystem-item"><h3>Cloudora Sync</h3><p>Seamless syncing across apps.</p></div>
+      <div class="ecosystem-item"><h3>Cloudora Games</h3><p>Fun experimental projects.</p></div>
+      <div class="ecosystem-item"><h3>Cloudora Playground</h3><p>For developers & coders.</p></div>
+    </div>
+  </section>
+
+  <section class="extended-section" id="more">
+    <h2 class="section-title">More Coming Soon</h2>
+    <div class="extended-grid">
+      <div class="extended-card"><h3>Cloudora AI</h3><p>Smart writing & design tools.</p></div>
+      <div class="extended-card"><h3>Cloudora Music</h3><p>Create beats and audio tracks.</p></div>
+      <div class="extended-card"><h3>Cloudora Studio</h3><p>Video editing made simple.</p></div>
+      <div class="extended-card"><h3>Cloudora Market</h3><p>Templates, assets, and more.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    Cloudora © 2025 — Expanding creativity for everyone.
+  </footer>
+
+  <script>
+    const revealElements = document.querySelectorAll('.hero, .tool-card, .feature, .ecosystem-item, .extended-card');
+
+    function revealOnScroll() {
+      revealElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 50) {
+          el.style.opacity = "1";
+          el.style.transform = "translateY(0)";
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+
+</body>
+</html>
